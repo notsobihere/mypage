@@ -26,6 +26,7 @@ body {
 
 header {
     color: #fff;
+    margin: 0 auto;
     background: grey;
     width: 100%;
 }

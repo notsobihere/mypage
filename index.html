@@ -5,10 +5,100 @@
         </title>
     </head>
     <body>
-        <header>
-            Welcome to mypage!!
-        </header>
-        <a.container href="m.youtube.com">video</a.container>
+        
+            <header>
+           <h1> Welcome to mypage!!</h1>
+            </header>
+        
+    <nav>
+        <a href="https://www.youtube.com/">videos</a>
+    </nav>
         <link rel="stylesheet" href="style.css">
-    </body>
+    </br>
+    <nav><button onclick="showPage('home')">Home</button>
+        <button onclick="showPage('comp')">Computer</button>
+    </nav>
+    
+  
+    <!-- Home Page -->
+    <div id="home" class="page active">
+      <h1>Welcome to the Home Page</h1>
+      <p>This is the home section.</p>
+    </div>
+  
+    <!-- Computer Page -->
+    <div id="comp" class="page">
+      <h1>Computer Page</h1>
+      <p>This is the computer section.</p>
+        <center><u><h1>Generations of Computers</h1></u></center>
+
+    <section>
+        <h2>First Generation (1940-1956)</h2>
+        <ul>
+            <li>Used vacuum tubes for circuitry</li>
+            <li>Very large and expensive</li>
+            <li>Slow processing speed</li>
+            <li>Used machine language</li>
+            <li>Examples: ENIAC, UNIVAC</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Second Generation (1956-1963)</h2>
+        <ul>
+            <li>Used transistors instead of vacuum tubes</li>
+            <li>Smaller, faster, and cheaper than first generation</li>
+            <li>Used assembly language</li>
+            <li>More reliable</li>
+            <li>Examples: IBM 1401, IBM 7090</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Third Generation (1964-1971)</h2>
+        <ul>
+            <li>Used integrated circuits (ICs)</li>
+            <li>Even smaller and more efficient</li>
+            <li>Used high-level programming languages</li>
+            <li>Supported multitasking and multiprogramming</li>
+            <li>Examples: IBM System/360, Honeywell 6000</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Fourth Generation (1971-Present)</h2>
+        <ul>
+            <li>Used microprocessors (VLSI technology)</li>
+            <li>Highly compact and powerful</li>
+            <li>Widespread use of personal computers</li>
+            <li>Graphical user interfaces (GUI)</li>
+            <li>Examples: IBM PC, Apple Macintosh</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Fifth Generation (Present and Beyond)</h2>
+        <ul>
+            <li>Based on Artificial Intelligence (AI)</li>
+            <li>Focus on natural language processing and robotics</li>
+            <li>Use of quantum computing and advanced algorithms</li>
+            <li>Still under development</li>
+            <li>Examples: AI assistants, quantum computers</li>
+        </ul>
+    </section>
+    </div>
+  
+    <script>
+      function showPage(id) {
+        document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+        document.getElementById(id).classList.add('active');
+      }
+    </script>
+    <footer>
+        <p>
+            &copy; 2025 mypage
+        </p>
+    </footer>
+</body>
 </html>
+        <nav>
